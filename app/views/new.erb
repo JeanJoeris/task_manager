@@ -1,6 +1,17 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task: </p>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit' value='Make Task!'/>
-</form>
+<div class="navbar navbar-default">
+  <h1 class="navbar-brand">Create a new task!</h1>
+  <ul class='nav navbar-right col-md-2'>
+    <li><a href = "/">Home</a></li>
+    <li><a href = "/tasks">Task Index</a></li>
+  </ul>
+</div>
+<div class="jumbotron">
+  <form action="/tasks" method="post">
+    <p>Enter a new task - </p>
+    <label for="task_title">Task title:</label>
+    <input id='task_title' type='text' name='task[title]' placeholder="title" class="form-control"/><br/>
+    <label for="task_description">Task description:</label>
+    <textarea id="task_description" name='task[description]' placeholder="description" class='form-control'></textarea><br/>
+    <input type='submit' value='Make Task!'/>
+  </form>
+</div>

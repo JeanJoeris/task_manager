@@ -12,4 +12,13 @@ tasks:
 - id: 4
   title: foo
   description: foobar foo bar biz
-total: 4
+- id: 5
+  title: foo
+  description: bar
+- id: 6
+  title: Do homework
+  description: Kick ass at html and css, and stop hating it so much
+- id: 7
+  title: Create a better task manager
+  description: styling is hard
+total: 7

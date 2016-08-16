@@ -1,5 +1,24 @@
-<h1>All Tasks</h1>
 
-<% @tasks.each do |task| %>
-  <h3><%= task.id %>: <a href="/task/<%= task.id %>"><%= task.title %></a></h3>
-<% end %>
+<div class="navbar navbar-default">
+  <h1 class="navbar-brand">All Tasks</h1>
+  <ul class='nav navbar-right col-md-2'>
+    <li><a href = "/">Home</a></li>
+    <li><a href = "/tasks/new">Create a New Task</a></li>
+  </ul>
+</div>
+  <div class="jumbotron">
+  <table class="table">
+    <tr>
+      <th>#</th>
+      <th>Task Title</th>
+    </tr>
+    <tbody>
+      <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.id %></td>
+        <td><a href="/task/<%= task.id %>"><%= task.title %></a></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </tr>
+</div>
